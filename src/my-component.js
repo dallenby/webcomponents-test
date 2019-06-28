@@ -7,13 +7,13 @@ class BasicSetup extends LitElement {
   static get styles() {
     return css`
       #image1 {
-        background-image: url("assets/image1.jpg");
+        background-image: url("/assets/image1.jpg");
         background-size: 200px 100px;
         width: 200px;
         height: 100px;
       }
       #image2 {
-        background-image: url("assets/image2.jpg");
+        background-image: url("/assets/image2.jpg");
         background-size: 200px 100px;
         width: 200px;
         height: 100px;
