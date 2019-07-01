@@ -3,6 +3,17 @@ import { LitElement, html, css} from 'lit-element';
 
 // Create a class definition for your component and extend the LitElement base class
 class BasicSetup extends LitElement {
+
+  static get properties() {
+    return {
+      imageName: {type: String},
+    };
+  }
+
+  constructor() {
+    super();
+    this.imageName = "/assets/image2.jpg";
+  }
   
   static get styles() {
     return css`
@@ -12,6 +23,9 @@ class BasicSetup extends LitElement {
         width: 200px;
         height: 100px;
         float: left;
+      }
+      #image1:hover {
+        color: white;
       }
       #image2 {
         background-image: url("/assets/image2.jpg");
@@ -72,6 +86,9 @@ class BasicSetup extends LitElement {
       #magnify {
         height: 400px;
       }
+      #magnify_image {
+        height: 400px;
+      }
     `;
   }
 
@@ -80,7 +97,7 @@ class BasicSetup extends LitElement {
     // create the DOM elements
     return html`
     <div id="magnify">
-      magnified
+      <img id="magnify_image" src=${this.imageName}>
     </div>
     <div id="image1">
       <p>Image 1</p>
