@@ -1,6 +1,6 @@
 import { LitElement, html, css} from 'lit-element';
 import "./image-gallery";
-class BasicSetup extends LitElement {
+class WebComponentsExercise extends LitElement {
 
   static get properties() {
     return {
@@ -23,4 +23,4 @@ class BasicSetup extends LitElement {
 
 }
 
-customElements.define('basic-setup', BasicSetup);
+customElements.define('web-components-exercise', WebComponentsExercise);

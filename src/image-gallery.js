@@ -27,12 +27,6 @@ class ImageGallery extends LitElement {
     `;
   }
 
-  updated(changedProperties) {
-    if (changedProperties) {
-      console.log("Update");
-    }
-  }
-
   render() {
     return html`
     <large-picture .picture=${this.picture}></large-picture>
