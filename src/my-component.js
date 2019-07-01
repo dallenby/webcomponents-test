@@ -81,11 +81,8 @@ class BasicSetup extends LitElement {
         height: 100px;
         float: left;
       }
-      #magnify {
-        height: 400px;
-      }
       #magnify_image {
-        height: 400px;
+        height: 600px;
       }
 
     `;
