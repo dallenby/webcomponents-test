@@ -14,7 +14,6 @@ class ImageGallery extends LitElement {
   constructor() {
     super();
     this.url = '/assets/';
-    this.images = ['image1.jpg','image2.jpg','image3.jpg','image4.jpg','image5.jpg','image6.jpg','image7.jpg','image8.jpg'];
     this.picture = '/assets/image1.jpg';
   }
   
