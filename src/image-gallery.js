@@ -22,7 +22,7 @@ class ImageGallery extends LitElement {
       .image {
         width: 200px;
         height: 110px;
-        float: left;
+        padding-right: 27px;
       }
     `;
   }
@@ -30,7 +30,7 @@ class ImageGallery extends LitElement {
   render() {
     return html`
     <large-picture .picture=${this.picture}></large-picture>
-    <ul>
+    <ul id="list">
       ${this.images.map(image => html`
           <img class="image" id=${image} src=${this.url + image} @click=${()=>this.picture = this.url + image}>
       `)}

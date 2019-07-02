@@ -11,7 +11,10 @@ class LargePicture extends LitElement {
   static get styles() {
     return css`
       #magnify_image {
-        height: 600px;
+        height: 700px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
       }
     `;
   }
