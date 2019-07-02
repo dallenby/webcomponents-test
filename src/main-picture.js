@@ -1,6 +1,6 @@
 import { LitElement, html, css} from 'lit-element';
 
-class LargePicture extends LitElement {
+class MainPicture extends LitElement {
 
   static get properties() {
     return {
@@ -11,7 +11,7 @@ class LargePicture extends LitElement {
   static get styles() {
     return css`
       #magnify_image {
-        height: 700px;
+        height: 600px;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -28,4 +28,4 @@ class LargePicture extends LitElement {
   }
 }
 
-customElements.define('large-picture', LargePicture);
+customElements.define('main-picture', MainPicture);
