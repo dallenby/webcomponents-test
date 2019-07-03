@@ -4,27 +4,32 @@ class MainPicture extends LitElement {
 
   static get properties() {
     return {
-      picture: {type:String}
+      picture: {type:String},
+      show: {type:Boolean}
     };
   }
   
   static get styles() {
     return css`
-      #magnify_image {
+      #main-picture {
         height: 600px;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        cursor: pointer;
       }
     `;
   }
 
   render() {
-    return html`
-      <div>
-        <img id="magnify_image" src=${this.picture}>
-      </div>
-    `;
+    if(this.show){
+      return html`
+        <div>
+          <img id="main-picture" src=${this.picture}>
+        </div>
+      `;
+    }
+    return html``;
   }
 }
 

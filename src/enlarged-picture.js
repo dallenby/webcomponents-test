@@ -20,6 +20,7 @@ class EnlargedPicture extends LitElement {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        cursor: pointer;
       }
     `;
   }
